@@ -1,4 +1,4 @@
-import theme from 'styles/theme/default';
+import theme from 'styles/theme/theme';
 
 // inferência de tipos
 type Theme = typeof theme;
