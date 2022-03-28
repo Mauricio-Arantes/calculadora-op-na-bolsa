@@ -2,6 +2,7 @@ import Main from 'components/Main';
 import VerticalLinearStepper from '../components/VerticalStepper';
 import { TextField } from '@mui/material';
 import OptionButton from '../components/OptionButton';
+import MaterialUIPickers from '../components/DatePicker';
 
 const Home = () => {
   const steps = [
@@ -15,10 +16,11 @@ const Home = () => {
     },
     {
       label: 'Mês de referência',
-      body: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
+      body: <MaterialUIPickers />,
+    },
+    {
+      label: 'Cadastro dos dados',
+      body: <MaterialUIPickers />,
     },
   ];
 
