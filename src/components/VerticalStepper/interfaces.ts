@@ -1,8 +1,8 @@
 export interface IVerticalStepperOptions {
-  steps: StepsOptions[];
+  steps: IStepsOptions[];
 }
 
-interface StepsOptions {
+interface IStepsOptions {
   label: string;
-  body: string;
+  body: string | JSX.Element;
 }

@@ -12,10 +12,9 @@ import {
 import { IVerticalStepperOptions } from './interfaces';
 import * as S from './styles';
 
-export default function VerticalLinearStepper({
+const VerticalLinearStepper: React.FC<IVerticalStepperOptions> = ({
   steps,
-}: IVerticalStepperOptions) {
-  console.log(steps);
+}) => {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
@@ -32,19 +31,11 @@ export default function VerticalLinearStepper({
 
   return (
     <S.Container>
-      <Box sx={{ maxWidth: 400 }}>
+      <Box sx={{ maxWidth: 400, minWidth: 400 }}>
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((step, index) => (
             <Step key={step.label}>
-              <StepLabel
-                optional={
-                  index === 2 ? (
-                    <Typography variant="caption">Last step</Typography>
-                  ) : null
-                }
-              >
-                {step.label}
-              </StepLabel>
+              <StepLabel>{step.label}</StepLabel>
               <StepContent>
                 <Typography>{step.body}</Typography>
                 <Box sx={{ mb: 2 }}>
@@ -54,14 +45,14 @@ export default function VerticalLinearStepper({
                       onClick={handleNext}
                       sx={{ mt: 1, mr: 1 }}
                     >
-                      {index === steps.length - 1 ? 'Finish' : 'Continue'}
+                      {index === steps.length - 1 ? 'Encerrar' : 'Continuar'}
                     </Button>
                     <Button
                       disabled={index === 0}
                       onClick={handleBack}
                       sx={{ mt: 1, mr: 1 }}
                     >
-                      Back
+                      Voltar
                     </Button>
                   </div>
                 </Box>
@@ -80,4 +71,6 @@ export default function VerticalLinearStepper({
       </Box>
     </S.Container>
   );
-}
+};
+
+export default VerticalLinearStepper;
