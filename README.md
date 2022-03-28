@@ -72,14 +72,13 @@ Antes de começar :checkered_flag:, você precisa ter o [Node](https://nodejs.or
 ## :checkered_flag: Começando ##
 
 ```bash
-# Para criar um projeto next usando esse boilerplate
-$ yarn create next-app -e https://github.com/maurodesouza/next-boilerplate
-
 # Para iniciar o projeto
 $ yarn dev
 
 # O app vai inicializar em <http://localhost:3000>
 ```
+
+Ou pode acessar o projeto [aqui](https://calculadora-op-na-bolsa.vercel.app/)
 
 ## :video_game: Comandos
 
@@ -95,7 +94,7 @@ $ yarn dev
 
 &#xa0;
 
-Feito com :heart: por <a href="https://github.com/maurodesouza" target="_blank">Mauro de Souza</a> com tutoria de  <a href="https://github.com/willianjusten" target="_blank">Willian Justen</a>
+Feito com :heart: por <a href="https://github.com/Mauricio-Arantes" target="_blank">Mauricio Arantes</a>
 &#xa0;
 
 <a href="#top">Voltar para o topo</a>
