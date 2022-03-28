@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyles from 'styles/global';
-import theme from 'styles/theme/default';
+import theme from 'styles/theme/theme';
 
 
 export const decorators = [
