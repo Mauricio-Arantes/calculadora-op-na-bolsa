@@ -37,7 +37,7 @@ const VerticalLinearStepper: React.FC<IVerticalStepperOptions> = ({
             <Step key={step.label}>
               <StepLabel>{step.label}</StepLabel>
               <StepContent>
-                <Typography>{step.body}</Typography>
+                {step.body}
                 <Box sx={{ mb: 2 }}>
                   <div>
                     <Button
