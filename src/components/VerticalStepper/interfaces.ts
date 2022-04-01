@@ -5,4 +5,5 @@ export interface IVerticalStepperOptions {
 interface IStepsOptions {
   label: string;
   body: string | JSX.Element;
+  onContinue: () => void;
 }
